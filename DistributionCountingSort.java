@@ -65,43 +65,24 @@ public class DistributionCountingSort {
     }
 
     public static void main(String[] args) throws Exception {
-
-        Scanner kb = new Scanner(System.in);
-
-        // System.out.print("Enter the number of items to be sorted from the file:");
-        int count = 20; //Integer.parseInt(args[0]);
+        
+        int count = Integer.parseInt(args[0]);
+        //int count = 20; 
         //System.out.println(count);
-        //System.out.print("Enter the number for the minimum value to be sorted:");
-        int min = 1; //Integer.parseInt(args[2]);
-        //System.out.println(min);
-        //System.out.print("Enter the number for the maximum value to be sorted:");
-        int max = 100; //Integer.parseInt(args[3]);
-        //System.out.println(max);
-
-        //this prevents backslash errors and is needed for next()
-        //kb.useDelimiter("\n");
-
-
+        
         String inFile = args[1];
-        //String inFile = kb.next();
-
-
-        //create an Array to store Strings from text
-
+        
+        int min = Integer.parseInt(args[2]);
+        //int min = 1;
+        //System.out.println(min);
+        
+        int max = Integer.parseInt(args[3]);
+        //int max = 100;
+        //System.out.println(max);  
 
         DistributionCountingSort Sort = new DistributionCountingSort();
-
         Sort.countingSort(count, inFile, min, max);
         //System.out.println("After Sorting Array");
         //printArray(sortedArray);
-
-
     }
-
-
 }
-
-
-//for testing
-//String inFile = "C:\\Users\\Bluew\\IdeaProjects\\New Project\\src\\Test.txt";
-//String inFile = "C:\Users\Bluew\IdeaProjects\New Project\src\Test.txt";
