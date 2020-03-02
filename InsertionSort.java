@@ -53,26 +53,15 @@ class InsertionSort {
         return temp;
     }
 
-    public static void main(String[] args) throws Exception {
-
-        //create a keyboard scanner
-        //Scanner kb = new Scanner(System.in);
-        //System.out.print("Enter the number of items to be sorted:");
+    public static void main(String[] args) throws Exception {        
 
         int count = Integer.parseInt(args[0]);
         //this prevents backslash errors
         //kb.useDelimiter("\n");
-        //System.out.print("Enter input file path and name:");
+        
         String inFile = args[1];
-
-
-        //System.out.println("You entered: " + inFile);
-
-
         InsertionSort sort = new InsertionSort();
         sort.Sort(count, inFile);
-
-
     }
 
 
@@ -80,9 +69,6 @@ class InsertionSort {
 
 }
 
-//for testing
-//String inFile = "C:\\Users\\Bluew\\IdeaProjects\\New Project\\src\\Test1.txt";
-//String inFile = "C:\Users\Bluew\IdeaProjects\New Project\src\Test1.txt";
         
 
 
